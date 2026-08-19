@@ -1,97 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
-        <style>
-        header{
-        background-color: #494f50;
-        color: #FFFFFF;
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 16px;
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre o Milho - Gabriel Augusto Kist</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --accent-color: #fbc02d;
+            --bg-color: #f9fbe7;
+            --card-bg: #ffffff;
+            --text-color: #333333;
         }
-        main{
-            background-color: #ffffff;
-            color:#ffffff
-            max-width: 400px;
-            margin: 0 auto;
-            padding:16px;
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
-        </style>
-    </head>
-    <body>
-       <header>
-           <h1>Meu blog tech</h1>
-           <p>vou compartilhar conhecimento sobre tecnologia e programação</p>
-        </header>
-      <main>
-        <img src="" alt="">
-          <h2>Meu primeiro post</h2>
-          <p>por: Gabrie Augusto Kist</p>
-          <p>Olá! Seja bem-vindo ao meu blog. Aqui vou compartilhar meu aprendizado em pro
-            gramação, desenvolvimento web e tecnologia. Meu objetivo é registrar minha evolução como desenvolvedor, publicar projetos, dicas e 
-            conteúdos que possam ajudar outras pessoas que também estão começando. </p>
-            <h2>O que é HTML?</h2>
-            <p>O HTML é uma linguagem utilisada para criar a estrutura de um site. Com ele podemos colocar títulos, textos, imagens, links e vários outros elementos que 
-              aparecem em uma página da internet.
-            </p>
-            <h2>O que é CSS?</h2>
-            <p>O CSS serve para deixar o site mais bonito. Com ele podemos mudar as cores, o tamanho das letras,
-               colocar imagens de fundo e organizar os elementos da página.</p>
-               <h2>O que é JavaScript?</h2>
-               <p>O JavaScript é uma linguagem de programação que deixa o 
-                site mais interativo. Com ele podemos criar botões que fun
-                cionam, menus, animações e outras fu</p>
-                <h2>Por que estou aprendendo programação?</h2>
-                <p>Comecei a estudar programação porque gosto de
-                   tecnologia e quero aprender como os sites e aplicativos 
-                   são feitos. Ainda estou aprendendo, mas a cada projeto 
-                   descubro coisas novas.
-                   <h2>GitHub</h2>
-                   <p>O GitHub é um site onde podemos guardar nossos 
-                    projetos de programação. Ele também ajuda a 
-                    acompanhar as mudanças no código e compartilhar o 
-                    trabalho com outras pessoas;
 
-                    <style>
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-                    img{
+        header .author {
+            margin: 0;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-                      width: 10%;
+        header h1 {
+            margin: 10px 0 0 0;
+            font-size: 2.5rem;
+        }
 
-                    }  
-                   </style>
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
 
-                    <body>
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
 
-                      <img src="ChatGPT Image 12_08_2026, 14_02_27 (1).png" alt="foto de uma logo sobre tecnologia educacão">
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
 
-                    
-                    </body>
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-            
-                   <div>
-                    <button>❤️ <span>0</span></button>
-                   </div>
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
 
-        </main>  
+        .image-container img:hover {
+            transform: scale(1.02);
+        }
 
-      </body>
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
 
-      <script>
-        const botao = document.querySelector("buttan");
-        botao.addEventListener("click", botao clicado);
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f1f8e9;
+            margin: 8px 0;
+            padding: 12px 15px;
+            border-left: 5px solid var(--primary-color);
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e8f5e9;
+            color: #555;
+            margin-top: 40px;
+            border-top: 1px solid #c8e6c9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p class="author">Desenvolvido por: Gabriel Augusto Kist</p>
+        <h1>Tudo Sobre o Milho 🌽</h1>
+    </header>
+
+    <div class="container">
         
-        function botaoclicado(){
-          console.log("fui clicado");
-          let texto = botao.querySelector("span");
-          texto.textContent++;
-        }
+        <section class="card">
+            <h2>O Cultivo do Milho</h2>
+            <p>O milho (<em>Zea mays</em>) é um dos grãos mais cultivados e consumidos no mundo. Original das Américas, ele desempenha um papel fundamental na economia, na alimentação humana e na nutrição animal.</p>
 
-      </script>
-  
+            <!-- PRIMEIRA IMAGEM -->
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=800&q=80" alt="Plantação de Milho">
+                <div class="image-caption">Figura 1: Plantação de milho no campo.</div>
+            </div>
+        </section>
 
-   </html>
+        <section class="card">
+            <h2>Utilidades e Benefícios</h2>
+            <p>Além de ser saboroso, o milho é rico em fibras, vitaminas do complexo B e minerais. Ele é utilizado de diversas formas:</p>
+            <ul>
+                <li>🌾 <strong>Alimentação Direta:</strong> Milho cozido, assado, pipoca, curau e pamonha.</li>
+                <li>🌽 <strong>Indústria Alimentícia:</strong> Farinhas, amido de milho, óleos e xaropes.</li>
+                <li>🐄 <strong>Ração Animal:</strong> Base nutricional para gado, aves e suínos.</li>
+                <li>⛽ <strong>Biocombustível:</strong> Produção de etanol de milho.</li>
+            </ul>
+
+            <!-- SEGUNDA IMAGEM -->
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80" alt="Espigas de Milho">
+                <div class="image-caption">Figura 2: Espigas de milho prontas para o consumo.</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© Página criada por <strong>Gabriel Augusto Kist</strong> no VS Code.</p>
+    </footer>
+
+</body>
+</html>
