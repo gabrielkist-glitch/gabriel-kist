@@ -54,7 +54,7 @@
                    <p>O GitHub é um site onde podemos guardar nossos 
                     projetos de programação. Ele também ajuda a 
                     acompanhar as mudanças no código e compartilhar o 
-                    trabalho com outras pessoas.
+                    trabalho com outras pessoas;
 
                     <style>
 
@@ -74,10 +74,22 @@
 
             
                    <div>
-                    <button>❤️</button>
+                    <button>❤️ <span>0</span></button>
                    </div>
 
         </main>  
 
       </body>
+
+      <script>
+        const botao = document.querySelector("buttan");
+        botao.addEventListener("click", botao clicado);
+        function botaoclicado(){
+          console.log("fui clicado");
+          let texto = botao.querySelector("span");
+          texto.textContent++;
+        }
+
+      </script>
+
    </html>
